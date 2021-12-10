@@ -1,0 +1,26 @@
+{
+	"name": "jasmine-browser-runner-example",
+	"version": "0.0.1",
+	"description": "jasmine browser test",
+	"main": "index.js",
+	"scripts": {
+		"test": "jasmine",
+		"coverage": "nyc --reporter=lcov jasmine; nyc report",
+		"lint": "eslint 'sample/**/*.js' 'src/**/*.js' 'spec/**/*.js'",
+		"fix": "npm run lint -- --fix",
+		"integration": "jasmine --config=./jasmine.json"
+	},
+	"repository": {},
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"eslint": "7.32.0",
+		"jasmine": "3.5.0",
+		"jasmine-browser-runner": "^0.10.0",
+		"jasmine-core": "^3.10.1",
+		"mach.js": "0.8.0",
+		"proxyquire": "2.1.0"
+	},
+	"dependencies": {
+		"lodash": "4.17.21"
+	}
+}
